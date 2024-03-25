@@ -1,0 +1,8 @@
+@use "sass/utilities/css-variables" as cv;
+@use "sass/themes/dark";
+@use "sass/themes/setup";
+
+@include cv.bulma-theme($name: "dark") {
+  @include dark.dark-theme;
+  @include setup.setup-theme;
+}
