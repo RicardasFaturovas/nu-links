@@ -2,11 +2,15 @@ This is a [Plasmo extension](https://docs.plasmo.com/) project bootstrapped with
 
 ## Getting Started
 
-First, run the development server:
+Node 16 or above is required
 
 ```bash
-pnpm dev
-# or
+npm install
+```
+
+To run development server
+
+```bash
 npm run dev
 ```
 
@@ -18,16 +22,21 @@ For further guidance, [visit our Documentation](https://docs.plasmo.com/)
 
 ## Making production build
 
+This should create a production bundle for your extension, ready to be zipped and published to the stores.
+
 Run the following:
 
 ```bash
-pnpm build
-# or
+
 npm run build
 ```
 
-This should create a production bundle for your extension, ready to be zipped and published to the stores.
+Bundled extension will be found under `build/chrome-mv3-prod`
 
-## Submit to the webstores
+For firefox use:
 
-The easiest way to deploy your Plasmo extension is to use the built-in [bpp](https://bpp.browser.market) GitHub action. Prior to using this action however, make sure to build your extension and upload the first version to the store to establish the basic credentials. Then, simply follow [this setup instruction](https://docs.plasmo.com/framework/workflows/submit) and you should be on your way for automated submission!
+```bash
+npm run build-firefox
+```
+
+Bundled extension will be found under `build/firefox-mv2-prod`
